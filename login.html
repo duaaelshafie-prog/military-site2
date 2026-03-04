@@ -26,11 +26,9 @@ body{
     text-align:center;
 }
 
-/* الهيدر مع عكس الشعارات */
 .header{
     display:flex;
     justify-content:space-between;
-    align-items:center;
     margin-bottom:25px;
 }
 
@@ -51,11 +49,6 @@ button{
     border:none;
     font-size:20px;
     border-radius:10px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#d4af37;
 }
 
 </style>
@@ -67,7 +60,7 @@ function loginCheck(){
     let password = document.getElementById("pass").value;
 
     if(password === "1234"){
-        window.location.href = "emergency.html";
+        location.replace("emergency.html");
     }
     else{
         alert("كلمة المرور غير صحيحة");
@@ -83,13 +76,8 @@ function loginCheck(){
 <div class="box">
 
 <div class="header">
-
-<!-- صقر الجديان شمال -->
-<img src="./emblem.jpg" width="90">
-
-<!-- علم السودان يمين -->
+<img src="emblem.jpg" width="90">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg" width="80">
-
 </div>
 
 <h2>سفارة جمهورية السودان - القاهرة</h2>
