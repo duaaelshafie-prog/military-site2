@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>أرقام الطوارئ</title>
+
+<script>
+
+// منع الدخول المباشر
+if(localStorage.getItem("access") !== "allowed"){
+    window.location.href="login.html";
+}
+
+</script>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Tahoma, Arial;
+    background: linear-gradient(135deg,#001f3f,#0a3d7a);
+    color:white;
+    direction:rtl;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.title{
+    text-align:center;
+    color:gold;
+    font-size:32px;
+}
+
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    margin:25px auto;
+    padding:25px;
+    width:650px;
+    border-radius:15px;
+    border:1px solid gold;
+    font-size:26px;
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<img src="./emblem.jpg" width="100">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg" width="90">
+
+</div>
+
+<div class="title">
+أرقام الطوارئ
+</div>
+
+<div class="card">
+نقيب / أبوبكر محمد بشرى — 01117747666
+</div>
+
+<div class="card">
+نقيب / تاج الاصفياء موسى — 01125744151
+</div>
+
+<div class="card">
+ملازم أول / قصي عبدالقادر — 01141611352
+</div>
+
+<div class="card">
+ملازم أول / يوسف عبدالعظيم — 01555363822
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الملحقية العسكرية</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Tahoma;
+    background: linear-gradient(135deg,#002b5c,#0a3d7a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+    direction:rtl;
+}
+
+.box{
+    background: rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:25px;
+    width:420px;
+    text-align:center;
+}
+
+/* الهيدر مع عكس الشعارات */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border-radius:10px;
+    border:none;
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:gold;
+    border:none;
+    font-size:20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d4af37;
+}
+
+</style>
+
+<script>
+
+function loginCheck(){
+
+    let password = document.getElementById("pass").value;
+
+    if(password === "1234"){
+        window.location.href = "emergency.html";
+    }
+    else{
+        alert("كلمة المرور غير صحيحة");
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<div class="header">
+
+<!-- صقر الجديان شمال -->
+<img src="./emblem.jpg" width="90">
+
+<!-- علم السودان يمين -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg" width="80">
+
+</div>
+
+<h2>سفارة جمهورية السودان - القاهرة</h2>
+<h3 style="color:gold">الملحقية العسكرية</h3>
+
+<input type="password" id="pass" placeholder="أدخل كلمة المرور">
+
+<button onclick="loginCheck()">دخول</button>
+
+</div>
+
+</body>
+</html>
